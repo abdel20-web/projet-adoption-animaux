@@ -70,12 +70,6 @@ a {
     gap: 25px;
 }
 
-#hero-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 @media (min-width: 1000px) {
     #hero-container {
         font-size: 1.8rem;
