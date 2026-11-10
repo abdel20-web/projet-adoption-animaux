@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nos chiens à l'adoption</title>
+</head>
+<body>
+
+    <header>
+        <img src="Adopte un Compagnon.png" alt="dog-logo" id="dog-logo">
+        <nav id="nav-largeScreen">
+            <ul>
+                <li><a href="index.html" id="accueil">Accueil</a></li>
+                <li>Adoption</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div id="nav-mobile">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">
+                <span class="burger">☰</span>
+                <span class="close">✕</span>
+            </label>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#adoption">Adoption</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+      <main class="container">
+
+        <section id="hero">
+            <div id="hero-container">
+                <h1>Offrez une nouvelle vie à un chien de refuge</h1>
+                <p>Découvrez les chiens à adopter auprès de plusieurs refuges et associations, réunis sur une seule plateforme.</p>
+            </div>
+        </section>
+
+        <div class="filter-bar">
+            <div class="filter-group">
+                <label for="filter-animal">Animaux</label>
+                <select id="filter-animal">
+                    <option value="">Tous</option>
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                </select>
+    </div>
+
+        <div class="filter-group">
+            <label for="filter-age">Âge</label>
+            <select id="filter-age">
+                <option value="">Tous les âges</option>
+                <option value="chiot">Chiot / Chaton</option>
+                <option value="adulte">Adulte</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="filter-sexe">Sexe</label>
+            <select id="filter-sexe">
+                <option value="">Tous</option>
+                <option value="male">Mâle</option>
+                <option value="femelle">Femelle</option>
+            </select>
+        </div>
+
+        <button type="button" class="btn-filter">Filtrer</button>
+    </div>
+
+        <div class="dogs-grid">
+            
+
+        <!-- Carte 1 -->
+        <div class="dog-card">
+            <img src="images/Milo.jpg" alt="Photo de Milo" class="dog-img">
+            <div class="dog-info">
+                <h2>Milo</h2>
+                <p class="dog-details">♂ 2 ans</p>
+                <p class="dog-desc">Énergique et affectueux, Milo rêve d'une famille active.</p>
+                <a href="milo.html" class="btn-card">Voir la fiche →</a>
+            </div>
+        </div>
+
+         <!-- Carte 2 -->
+        <div class="dog-card">
+            <img src="images/Luna.jpg" alt="Photo de Luna" class="dog-img">
+            <div class="dog-info">
+                <h2>Luna</h2>
+                <p class="dog-details">♀ 3 ans</p>
+                <p class="dog-desc">Douce et sociable, Luna s'entend très bien avec les autres chiens.</p>
+                <button class="btn-card">Voir la fiche →</button>
+            </div>
+        </div>
+
+            <!-- Carte 3 -->
+        <div class="dog-card">
+            <img src="images/Oscar.jpg" alt="Photo de Oscar" class="dog-img">
+            <div class="dog-info">
+                <h2>Oscar</h2>
+                <p class="dog-details">♂ 5 ans</p>
+                <p class="dog-desc">Calme et câlin, Oscar est un compagnon idéal au quotidien.</p>
+                <button class="btn-card">Voir la fiche →</button>
+            </div>
+        </div>
+
+             <!-- Carte 4 -->
+        <div class="dog-card">
+            <img src="images/Nala.jpg" alt="Photo de Nala" class="dog-img">
+            <div class="dog-info">
+                <h2>Nala</h2>
+                <p class="dog-details">♀ 4 ans</p>
+                <p class="dog-desc">Joueuse et curieuse, Nala adore les balades et les moments de jeu.</p>
+                <button class="btn-card">Voir la fiche →</button>
+            </div>
+        </div>
+
+            <!-- Carte 5 -->
+        <div class="dog-card">
+            <img src="images/Apollo.jpg" alt="Photo de Apollo" class="dog-img">
+            <div class="dog-info">
+                <h2>Apollo</h2>
+                <p class="dog-details">♂ 1 ans</p>
+                <p class="dog-desc">Un jeune chien plein d'ébergie prêt à découvrir la vie de famille.</p>
+                <button class="btn-card">Voir la fiche →</button>
+            </div>
+        </div>
+
+            <!-- Carte 6 -->
+        <div class="dog-card">
+            <img src="images/Pixel.jpg" alt="Photo de Pixel" class="dog-img">
+            <div class="dog-info">
+                <h2>Pixel</h2>
+                <p class="dog-details">♂ 7 ans</p>
+                <p class="dog-desc">Paisible et attachant, Pixel recherche un foyer calme.</p>
+                <button class="btn-card">Voir la fiche →</button>
+            </div>
+        </div>
+
+       </div>
+
+    </main>
+
+</body>
+</html>
