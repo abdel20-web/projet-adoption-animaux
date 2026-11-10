@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF7F2;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#dog-logo {
+    width: 180px;
+    height: auto;
+    margin-left: -25px;
+}
+
+header ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+#hero {
+    background-image: url('../img/Jack Russell dans un pré fleuri.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    color: white;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#hero-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dogs-grid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cats-grid, .dogs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.cat-card, .dog-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.cat-img, .dog-img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;            
+    object-fit: cover;            
+    object-position: left center; 
+    display: block;
+}
+
+.cat-info, .dog-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.cat-desc, .dog-desc {
+    flex-grow: 1; 
+}
+
+
+.btn-card {
+    background-color: transparent;
+    color: #a04020;
+    border: 1.5px solid #a04020;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-card:hover {
+    background-color: #a04020;
+    color: white;
+}
+
+.filter-bar {    
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+    border: 1px solid #eaeaea;
+    flex: 1;
+    margin: 15px;
+}
+
+.filter-group label {   
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #444444;
+    white-space: nowrap;
+}
+
+.filter-group select {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 0.9rem;
+    color: #333333;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #a04020;
+    color: white;
+}
+
+/* Page Fiche de l'animal */
+.back-container {
+    max-width: 1100px;
+    margin: 30px auto 10px auto;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #2D4A3E;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.pet-profile-container {
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.pet-profile-image {
+    flex: 1;
+}
+
+.pet-profile-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.pet-profile-info {
+    flex: 1;
+}
+
+.pet-profile-info h2 {
+    font-size: 2rem;
+    color: #2D4A3E;
+    margin-bottom: 5px;
+}
+
+.pet-subtitle {
+    color: #666666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 20px 0;
+}
+
+/* Grille d'informations en cadre */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.info-item {
+    font-size: 0.95rem;
+    color: #444444;
+}
+
+.btn-adopt {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2D4A3E;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-adopt:hover {
+    background-color: #1e332a;
+}
+
+@media (max-width: 700px) {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    #nav-largeScreen,
+    #menu-toggle,
+    label .close,
+    .menu
+    {
+        display: none;
+    }
+    #nav-mobile,
+    label .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    #menu-toggle:checked ~ .menu,
+    #menu-toggle:checked ~ label .close {
+        display: block;
+        cursor: pointer;
+    }
+    #menu-toggle:checked ~ label .close {
+        text-align: right;
+    }
+    #menu-toggle:checked ~ label .burger {
+        display: none;
+    }
+    #menu-toggle:checked ~ .menu li {
+        margin: 15px;
+    }
+    body:has(#menu-toggle:checked) {
+        overflow: hidden;
+    }
+    header:has(#menu-toggle:checked) .menu{
+        height: 100vh;
+        text-align: center;
+        align-content: center;
+    }
+    header:has(#menu-toggle:checked) #nav-mobile {
+        width: 100%;
+    }
+    header:has(#menu-toggle:checked) #dog-logo{
+        display: none;
+    }
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: fit-content;
+    }
+    .filter-group label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .filter-group {
+        display: block;
+        min-width: 200px;
+        border-radius: 16px;
+    }
+    .filter-group select {
+        height: 36px;
+        border: 1px solid lightgray;
+    }
+    .dogs-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
