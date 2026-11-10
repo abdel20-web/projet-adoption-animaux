@@ -34,7 +34,7 @@ header ul {
 }
 
 #hero {
-    background-image: url('Jack Russell dans un pré fleuri.png');
+    background-image: url('../img/Jack Russell dans un pré fleuri.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
