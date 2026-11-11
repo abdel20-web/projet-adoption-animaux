@@ -46,7 +46,11 @@ a {
 }
 
 #hero {
-    background-image: url('../img/chien-hero.png');
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.1)
+        ), url('../img/chien-hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
