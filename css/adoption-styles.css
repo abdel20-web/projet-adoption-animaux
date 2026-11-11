@@ -33,6 +33,12 @@ header ul {
     border-bottom: 2px solid #A84E32;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 #nav-mobile {
     display: none;
 }
