@@ -46,7 +46,7 @@ a {
 }
 
 #hero {
-    background-image: url('../img/Jack Russell dans un pré fleuri.png');
+    background-image: url('../img/Chien joyeux.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -289,6 +289,9 @@ main {
     #decouverte {
         width: 60%;
     }
+    #chiens-titre {
+        justify-content: space-evenly;
+    }
 }
 
 footer {
@@ -337,7 +340,7 @@ footer {
         border-right: 0;
     }
     .decouverte.volontariats {
-        width: 50%;
+        width: 80%;
         margin: 0;
     }
 }
