@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-body:has(#filter-sex option[value="male"]:checked) {
+body:has(#filter-sex) {
     background-color: red;
 }
 
