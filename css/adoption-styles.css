@@ -29,6 +29,10 @@ header ul {
     padding: 0;
 }
 
+#adoption {
+    border-bottom: 2px solid #A84E32;
+}
+
 #nav-mobile {
     display: none;
 }
