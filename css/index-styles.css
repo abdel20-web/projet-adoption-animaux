@@ -354,4 +354,9 @@ footer {
         margin-bottom: 10px;
         text-align: center;
     }
+    #chiens-titre > div {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
