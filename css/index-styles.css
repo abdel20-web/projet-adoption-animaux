@@ -348,8 +348,11 @@ footer {
     }
     #chiens-titre > h2 {
         text-align: left;
+        margin-bottom: 10px;
+        border: 1px solid yellow;
     }
     #chiens-titre > a {
         text-align: right;
+        border: 1px solid aqua;
     }
 }
