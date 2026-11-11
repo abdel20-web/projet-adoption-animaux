@@ -6,6 +6,10 @@ body {
     color: #333;
 }
 
+body:has(#filter-sex option[value="male"]:checked) {
+    background-color: red;
+}
+
 header {
     display: flex;
     justify-content: space-between;
