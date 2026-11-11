@@ -347,11 +347,6 @@ footer {
         display: block;
     }
     #chiens-titre > h2 {
-        text-align: left;
         margin-bottom: 10px;
-    }
-    #chiens-titre > a {
-        width: 100%;
-        text-align: right;
     }
 }
