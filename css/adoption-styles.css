@@ -43,6 +43,13 @@ a {
     display: none;
 }
 
+.filter-bar:has(#filter-sex option[value="male"]:checked)~.dogs-grid .dog-card:not(:has(.male)){
+            display: none;
+}
+.filter-bar:has(#filter-sex option[value="female"]:checked)~.dogs-grid .dog-card:not(:has(.female)){
+            display: none;
+}
+
 #hero {
     background-image: url('../img/Jack Russell dans un pré fleuri.png');
     background-size: cover;
