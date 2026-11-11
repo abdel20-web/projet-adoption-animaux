@@ -46,7 +46,7 @@ a {
 }
 
 #hero {
-    background-image: url('../img/Chien joyeux.png');
+    background-image: url('../img/Chien joyeux dans un parc ensoleillé.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -342,5 +342,14 @@ footer {
     .decouverte.volontariats {
         width: 80%;
         margin: 0;
+    }
+    #chiens-titre {
+        display: block;
+    }
+    #chiens-titre > h2 {
+        text-align: left;
+    }
+    #chiens-titre > a {
+        text-align: right;
     }
 }
