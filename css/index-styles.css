@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF7F2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#dog-logo {
+    width: 180px;
+    height: auto;
+    margin-left: -25px;
+}
+
+header ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#accueil {
+    border-bottom: 2px solid #A84E32;
+}
+
+#contact {
+    border: 2px solid black;
+    padding: 7px 10px 7px 10px;
+    border-radius: 20px;
+    background-color: #12350F;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+/* MAIN */
+
+main {
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+#hero {
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.1)
+        ), url('../img/Prairie verdoyante et bokeh ensoleillé.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    color: white;
+    align-content: center;
+    padding: 10px;
+}
+
+#hero-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 1.3rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 1000px) {
+    #hero-container {
+        font-size: 1.8rem;
+    }
+}
+
+#valeurs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.valeur {
+    display: grid;
+    grid-template-rows: auto 1fr;  
+    gap: 10px;  
+    align-content: center;
+    border-right: 1px solid lightgray;
+    padding: 10px;
+}
+
+.valeur.engagement {
+    border: none;
+}
+
+#chiens {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#chiens-titre {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#liste-chiens {
+    color: #A84E32;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.infos {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+}
+
+#caract {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card a {
+    text-align: center;
+    border: 2px solid #A84E32;
+    color: #A84E32;
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.card a:hover {
+    background-color: #A84E32;
+    color: white;
+}
+
+#description {
+    flex: 1;
+}
+
+#success-stories {
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.1)
+        ), url('../img/Tendresse dorée avec un golden retriever.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#success-stories-container {
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    flex: 1;
+}
+
+#decouverte {
+    width: 80%;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+#success-stories a {
+    text-align: center;
+    border: 2px solid #A84E32;
+    color: #A84E32;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color: #FAF7F2;
+    padding: 2px;
+}
+
+@media (max-width: 850px) {
+    #caract {
+        display: block;
+    }
+    #caract h3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    #nav-largeScreen,
+    #menu-toggle,
+    label .close,
+    .menu
+    {
+        display: none;
+    }
+    #nav-mobile,
+    label .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    #menu-toggle:checked ~ .menu,
+    #menu-toggle:checked ~ label .close {
+        display: block;
+        cursor: pointer;
+    }
+    #menu-toggle:checked ~ label .close {
+        text-align: right;
+    }
+    #menu-toggle:checked ~ label .burger {
+        display: none;
+    }
+    #menu-toggle:checked ~ .menu li {
+        margin: 15px;
+    }
+    body:has(#menu-toggle:checked) {
+        overflow: hidden;
+    }
+    header:has(#menu-toggle:checked) .menu{
+        height: 100vh;
+        text-align: center;
+        align-content: center;
+    }
+    header:has(#menu-toggle:checked) #nav-mobile {
+        width: 100%;
+    }
+    header:has(#menu-toggle:checked) #dog-logo{
+        display: none;
+    }
+    #cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #valeurs {
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .valeur.vue {
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+    .valeur.adoption {
+        border-left: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-right: 0;
+    }
+    .valeur.refuges {
+        border-right: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+    }
+    .valeur.engagement {
+        border-top: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+    }
+    #success-stories {
+        min-height: 340px;
+        aspect-ratio: auto;
+    }
+    #success-stories-container {
+        width: 35%;
+    }
+    #decouverte {
+        width: 60%;
+    }
+}
+
+#partenariats-volontariats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#partenaires,
+#volontariats {
+    align-content: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+#partenaires {
+    border-right: 1px solid lightgray;
+}
+
+#voir-sources {
+    color: #A84E32;
+    cursor: pointer;
+}
+
+.decouverte.volontariats {
+    background-color: #A84E32;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    width: fit-content;
+}
+
+@media (max-width: 700px) {
+    #partenariats-volontariats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #partenaires {
+        border-right: 0;
+        border-bottom: 1px solid lightgray;
+    }
+    #partenaires,
+    #volontariats {
+        padding: 15px;
+    }
+    #chiens-titre {
+        display: block;
+    }
+    #chiens-titre > h2 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #chiens-titre > div {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+footer {
+    background-color: #12350F;
+    height: 80px;
+    align-content: center;
+}
+
+#footer-container {
+    width: 90%;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+@media (max-width: 700px) {
+    #footer-container {
+        text-align: center;
+    }
+}
