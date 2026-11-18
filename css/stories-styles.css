@@ -248,6 +248,9 @@ label .story {
 }
 
 @media (max-width: 700px) {
+    .card {
+        height: 400px;
+    }
     #nav-largeScreen,
     #menu-toggle,
     label .close,
