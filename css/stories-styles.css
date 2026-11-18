@@ -249,7 +249,7 @@ label .story {
 
 @media (max-width: 700px) {
     .card {
-        height: 400px;
+        height: 450px;
     }
     #nav-largeScreen,
     #menu-toggle,
