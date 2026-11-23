@@ -346,3 +346,93 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* Fiches des animaux */
+.dog-card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cache la case à cocher */
+.fiche-toggle {
+    display: none;
+}
+
+/* Panneau d'informations caché par défaut */
+.fiche-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* Affichage au clic sur le bouton */
+.fiche-toggle:checked ~ .fiche-overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.fiche-overlay h3 {
+    color: #2D4A3E;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.fiche-subtitle {
+    color: #8C6239;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 5px 0 10px 0;
+}
+
+.fiche-bio {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.fiche-details {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.85rem;
+    color: #444;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.btn-retour {
+    display: inline-block;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+    transition: color 0.2s ease;
+}
+
+.btn-retour:hover {
+    color: #2D4A3E;
+}
+
+/* Pour que le <label> garde le curseur main et le bon affichage */
+label.btn-card {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
