@@ -227,32 +227,49 @@ a {
         text-decoration: none;
         color: black;
     }
-    #nav-largeScreen,
+#nav-largeScreen,
     #menu-toggle,
-    label .close,
     .menu
     {
         display: none;
     }
     #nav-mobile,
-    label .burger {
+    label.hamburger {
         display: block;
         cursor: pointer;
-        font-size: 30px;
+        background: transparent;
+        width: 40px;
+        height: 60px;
+        position: relative;
     }
-    #menu-toggle:checked ~ .menu,
-    #menu-toggle:checked ~ label .close {
+    .line {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #A84E32;
+        transition: transform 0.5s ease;
+    }
+    .line:nth-child(1) {
+        top: 12px;
+    }
+    .line:nth-child(2) {
+        top: 24px;
+    }
+    .line:nth-child(3) {
+        top: 36px;
+    }
+    #menu-toggle:checked ~ .menu {
         display: block;
         cursor: pointer;
     }
-    #menu-toggle:checked ~ label .close {
-        text-align: right;
+    #nav-mobile:has(#menu-toggle:checked) .line:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
     }
-    #menu-toggle:checked ~ label .burger {
-        display: none;
+    #nav-mobile:has(#menu-toggle:checked) .line:nth-child(2) {
+        opacity: 0;
     }
-    #menu-toggle:checked ~ .menu li {
-        margin: 15px;
+    #nav-mobile:has(#menu-toggle:checked) .line:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
     }
     body:has(#menu-toggle:checked) {
         overflow: hidden;
@@ -261,12 +278,21 @@ a {
         height: 100vh;
         text-align: center;
         align-content: center;
-    }
-    header:has(#menu-toggle:checked) #nav-mobile {
+        background-color: #FAF7F2;
+        position: fixed;
         width: 100%;
+        inset: 0;
+        z-index: 1000
     }
-    header:has(#menu-toggle:checked) #dog-logo{
-        display: none;
+    #menu-toggle:checked ~ .menu li {
+        margin: 20px;
+        font-size: 24px;
+    }
+    header:has(#menu-toggle:checked) #logo,
+    header:has(#menu-toggle:checked) label.hamburger
+    {
+        position: relative;
+        z-index: 1001;
     }
     .filter-bar {
         display: flex;
