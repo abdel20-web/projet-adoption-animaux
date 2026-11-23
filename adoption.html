@@ -6,19 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/adoption-styles.css">
         <title>Nos chiens à l'adoption</title>
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <img src="img/Adopte un Compagnon.png" alt="dog-logo" id="dog-logo">
-            <nav id="nav-largeScreen">
-                <ul>
-                    <li><a href="index.html" id="accueil">Accueil</a></li>
-                    <li><a href="adoption.html" id="adoption">Adoption</a></li>
-                    <li><a href="contact.html" id="contact">Contact</a></li>
-                </ul>
-            </nav>
+<header>
+        <img src="img/Adopte un Compagnon.png" alt="dog-logo" id="dog-logo">
+        <nav id="nav-largeScreen">
+            <ul>
+                <li><a href="index.html" id="accueil">Accueil</a></li>
+                <li><a href="adoption.html" id="adoption">Adoption</a></li>
+                <li><a href="stories.html" id="stories">Success stories</a></li>
+                <li><a href="sources.html" id="sources">Sources</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+            </ul>
+        </nav>
         <div id="nav-mobile">
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="hamburger">
@@ -34,61 +36,61 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        </header>
+    </header>
 
-        <main class="container">
+    <main class="container">
 
-            <section id="hero">
-                <div id="hero-container">
-                    <h1>Offrez une nouvelle vie à un chien de refuge</h1>
-                    <p>Découvrez les chiens à adopter auprès de plusieurs refuges et associations, réunis sur une seule plateforme.</p>
-                </div>
-            </section>
+        <section id="hero">
+            <div id="hero-container">
+                <h1>Offrez une nouvelle vie à un chien de refuge</h1>
+                <p>Découvrez les chiens à adopter auprès de plusieurs refuges et associations, réunis sur une seule plateforme.</p>
+            </div>
+        </section>
 
-            <div class="filter-bar">
-                <div class="filter-group">
-                    <label for="filter-animal">Animaux</label>
-                    <select id="filter-animal">
-                        <option value="">Tous</option>
-                        <option value="chien">Chien</option>
-                        <option value="chat">Chat</option>
-                    </select>
-                </div>
-
-                <div class="filter-group">
-                    <label for="filter-age">Âge</label>
-                    <select id="filter-age">
-                        <option value="">Tous les âges</option>
-                        <option value="chiot">Chiot / Chaton</option>
-                        <option value="adulte">Adulte</option>
-                        <option value="senior">Senior</option>
-                    </select>
-                </div>
-
-                <div class="filter-group">
-                    <label for="filter-sexe">Sexe</label>
-                    <select id="filter-sexe">
-                        <option value="">Tous</option>
-                        <option value="male">Mâle</option>
-                        <option value="femelle">Femelle</option>
-                    </select>
-                </div>
-
+        <div class="filter-bar">
+            <div class="filter-group">
+                <label for="filter-animal">Animaux</label>
+                <select id="filter-animal">
+                    <option value="">Tous</option>
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                </select>
             </div>
 
-            <div class="dogs-grid">    
+            <div class="filter-group">
+                <label for="filter-age">Âge</label>
+                <select id="filter-age">
+                    <option value="">Tous les âges</option>
+                    <option value="chiot">Chiot / Chaton</option>
+                    <option value="adulte">Adulte</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
 
-                <!-- Carte 1 -->
-                <div class="dog-card">
-                    <input type="checkbox" id="fiche-milo" class="fiche-toggle">
-                    <img src="img/Milo.jpg" alt="Photo de Milo" class="dog-img">
-                    <div class="dog-info male">
-                        <h2>Milo</h2>
-                        <p class="dog-details">♂ 2 ans</p>
-                        <p class="dog-desc">Énergique et affectueux, Milo rêve d'une famille active.</p>
-                        <label for="fiche-milo" class="btn-card">Voir la fiche &rarr;</label>
-                    </div>
-            
+            <div class="filter-group">
+                <label for="filter-sexe">Sexe</label>
+                <select id="filter-sexe">
+                    <option value="">Tous</option>
+                    <option value="male">Mâle</option>
+                    <option value="femelle">Femelle</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="dogs-grid">    
+
+            <!-- Carte 1 -->
+            <div class="dog-card">
+                <input type="checkbox" id="fiche-milo" class="fiche-toggle">
+                <img src="img/Milo.jpg" alt="Photo de Milo" class="dog-img">
+                <div class="dog-info male">
+                    <h2>Milo</h2>
+                    <p class="dog-details">♂ 2 ans</p>
+                    <p class="dog-desc">Énergique et affectueux, Milo rêve d'une famille active.</p>
+                    <label for="fiche-milo" class="btn-card">Voir la fiche &rarr;</label>
+                </div>
+        
                 <!--Overlay-->
                 <div class="fiche-overlay">
                      <h3>Milo</h3>
@@ -103,18 +105,18 @@
                      <label for="fiche-milo" class="btn-retour">&larr; Retour</label>
                 </div>
             </div>
+        
+            <!-- Carte 2 -->
+            <div class="dog-card">
+                <input type="checkbox" id="fiche-Luna" class="fiche-toggle">
+                <img src="img/Luna.jpg" alt="Photo de Luna" class="dog-img">
+                <div class="dog-info femelle">
+                    <h2>Luna</h2>
+                    <p class="dog-details">♀ 3 ans</p>
+                    <p class="dog-desc">Douce et sociable, Luna s'entend très bien avec les autres chiens.</p>
+                    <label for="fiche-Luna" class="btn-card">Voir la fiche &rarr;</label>
+                </div>
             
-                <!-- Carte 2 -->
-                <div class="dog-card">
-                    <input type="checkbox" id="fiche-Luna" class="fiche-toggle">
-                    <img src="img/Luna.jpg" alt="Photo de Luna" class="dog-img">
-                    <div class="dog-info femelle">
-                        <h2>Luna</h2>
-                        <p class="dog-details">♀ 3 ans</p>
-                        <p class="dog-desc">Douce et sociable, Luna s'entend très bien avec les autres chiens.</p>
-                        <label for="fiche-Luna" class="btn-card">Voir la fiche &rarr;</label>
-                    </div>
-                
 
                 <!--Overlay-->
                 <div class="fiche-overlay">
@@ -130,20 +132,20 @@
                      <label for="fiche-Luna" class="btn-retour">&larr; Retour</label>
                 </div>
             </div>
-            
+        
 
-                <!-- Carte 3 -->
-                <div class="dog-card">
-                    <input type="checkbox" id="fiche-Oscar" class="fiche-toggle">
-                    <img src="img/Oscar.jpg" alt="Photo de Oscar" class="dog-img">
-                    <div class="dog-info male">
-                        <h2>Oscar</h2>
-                        <p class="dog-details">♂ 5 ans</p>
-                        <p class="dog-desc">Calme et câlin, Oscar est un compagnon idéal au quotidien.</p>
-                        <label for="fiche-Oscar" class="btn-card">Voir la fiche &rarr;</label>
-                    </div>
+            <!-- Carte 3 -->
+            <div class="dog-card">
+                <input type="checkbox" id="fiche-Oscar" class="fiche-toggle">
+                <img src="img/Oscar.jpg" alt="Photo de Oscar" class="dog-img">
+                <div class="dog-info male">
+                    <h2>Oscar</h2>
+                    <p class="dog-details">♂ 5 ans</p>
+                    <p class="dog-desc">Calme et câlin, Oscar est un compagnon idéal au quotidien.</p>
+                    <label for="fiche-Oscar" class="btn-card">Voir la fiche &rarr;</label>
+                </div>
 
-                    <!--Overlay-->
+                <!--Overlay-->
                 <div class="fiche-overlay">
                      <h3>Oscar</h3>
                      <p class="fiche-subtitle">Schnauzer Nain &bull; Mâle ♂ &bull; 5 ans</p>
@@ -157,19 +159,19 @@
                      <label for="fiche-Oscar" class="btn-retour">&larr; Retour</label>
                 </div>
             </div>
-            
-                <!-- Carte 4 -->
-                <div class="dog-card">
-                    <input type="checkbox" id="fiche-Nala" class="fiche-toggle">
-                    <img src="img/Nala.jpg" alt="Photo de Nala" class="dog-img">
-                    <div class="dog-info femelle">
-                        <h2>Nala</h2>
-                        <p class="dog-details">♀ 4 ans</p>
-                        <p class="dog-desc">Joueuse et curieuse, Nala adore les balades et les moments de jeu.</p>
-                        <label for="fiche-Nala" class="btn-card">Voir la fiche &rarr;</label>
-                    </div>
+        
+            <!-- Carte 4 -->
+            <div class="dog-card">
+                <input type="checkbox" id="fiche-Nala" class="fiche-toggle">
+                <img src="img/Nala.jpg" alt="Photo de Nala" class="dog-img">
+                <div class="dog-info femelle">
+                    <h2>Nala</h2>
+                    <p class="dog-details">♀ 4 ans</p>
+                    <p class="dog-desc">Joueuse et curieuse, Nala adore les balades et les moments de jeu.</p>
+                    <label for="fiche-Nala" class="btn-card">Voir la fiche &rarr;</label>
+                </div>
 
-                    <!--Overlay-->
+                <!--Overlay-->
                 <div class="fiche-overlay">
                      <h3>Nala</h3>
                      <p class="fiche-subtitle">Jack Russell Terrier &bull; Femelle ♂ &bull; 4 ans</p>
@@ -183,20 +185,20 @@
                      <label for="fiche-Nala" class="btn-retour">&larr; Retour</label>
                 </div>
             </div>
-                
+            
 
-                <!-- Carte 5 -->
-                <div class="dog-card">
-                    <input type="checkbox" id="fiche-Apollo" class="fiche-toggle">
-                    <img src="img/Apollo.jpg" alt="Photo de Apollo" class="dog-img">
-                    <div class="dog-info male">
-                        <h2>Apollo</h2>
-                        <p class="dog-details">♂ 3 ans</p>
-                        <p class="dog-desc">Un jeune chien plein d'ébergie prêt à découvrir la vie de famille.</p>
-                        <label for="fiche-Apollo" class="btn-card">Voir la fiche &rarr;</label>
-                    </div>
-                
-                    <!--Overlay-->
+            <!-- Carte 5 -->
+            <div class="dog-card">
+                <input type="checkbox" id="fiche-Apollo" class="fiche-toggle">
+                <img src="img/Apollo.jpg" alt="Photo de Apollo" class="dog-img">
+                <div class="dog-info male">
+                    <h2>Apollo</h2>
+                    <p class="dog-details">♂ 3 ans</p>
+                    <p class="dog-desc">Un jeune chien plein d'ébergie prêt à découvrir la vie de famille.</p>
+                    <label for="fiche-Apollo" class="btn-card">Voir la fiche &rarr;</label>
+                </div>
+            
+                <!--Overlay-->
                 <div class="fiche-overlay">
                      <h3>Apollo</h3>
                      <p class="fiche-subtitle">Boxer &bull; Mâle ♂ &bull; 3 ans</p>
@@ -211,17 +213,17 @@
                 </div>
             </div>
 
-                <!-- Carte 6 -->
-                <div class="dog-card">
-                    <img src="img/Pixel.jpg" alt="Photo de Pixel" class="dog-img">
-                    <input type="checkbox" id="fiche-Pixel" class="fiche-toggle">
-                    <div class="dog-info male">
-                        <h2>Pixel</h2>
-                        <p class="dog-details">♂ 7 ans</p>
-                        <p class="dog-desc">Paisible et attachant, Pixel recherche un foyer calme.</p>
-                        <label for="fiche-Pixel" class="btn-card">Voir la fiche &rarr;</label>
-                    </div>
-                
+            <!-- Carte 6 -->
+            <div class="dog-card">
+                <img src="img/Pixel.jpg" alt="Photo de Pixel" class="dog-img">
+                <input type="checkbox" id="fiche-Pixel" class="fiche-toggle">
+                <div class="dog-info male">
+                    <h2>Pixel</h2>
+                    <p class="dog-details">♂ 7 ans</p>
+                    <p class="dog-desc">Paisible et attachant, Pixel recherche un foyer calme.</p>
+                    <label for="fiche-Pixel" class="btn-card">Voir la fiche &rarr;</label>
+                </div>
+            
                 <!--Overlay-->
                 <div class="fiche-overlay">
                      <h3>Pixel</h3>
@@ -236,7 +238,14 @@
                      <label for="fiche-Pixel" class="btn-retour">&larr; Retour</label>
                 </div>
             </div>
-            </div>
-        </main>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <p>© 2026 Adopte un Compagnon - Tous droits réservés.</p>
+        </div>
+    </footer>
+
     </body>
 </html>
