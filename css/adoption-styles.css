@@ -1,14 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FAF7F2;
-    color: #333;
 }
 
-body:has(#filter-sex) {
-    background-color: red;
-}
+/* HEADER */
 
 header {
     display: flex;
@@ -24,17 +20,25 @@ header {
     margin-left: -25px;
 }
 
+#adoption {
+    border-bottom: 2px solid #A84E32;
+}
+
 header ul {
     list-style: none;
     align-items: center;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     margin: 0;
     padding: 0;
 }
 
-#adoption {
-    border-bottom: 2px solid #A84E32;
+#contact {
+    border: 2px solid black;
+    padding: 7px 10px 7px 10px;
+    border-radius: 20px;
+    background-color: #12350F;
+    color: #FFFFFF;
 }
 
 a {
@@ -47,51 +51,52 @@ a {
     display: none;
 }
 
-.filter-bar:has(#filter-sexe option[value="male"]:checked)~.dogs-grid .dog-card:not(:has(.male)){
-            display: none;
-}
-.filter-bar:has(#filter-sexe option[value="femelle"]:checked)~.dogs-grid .dog-card:not(:has(.femelle)){
-            display: none;
-}
-
 #hero {
-    background-image: url('../img/Jack Russell dans un pré fleuri.png');
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.1)
+        ), url('../img/Parc verdoyant baigné de soleil.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 400px;
     color: white;
     align-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
-    margin-bottom: 30px;
 }
 
 #hero-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 1.3rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
+
+@media (min-width: 1000px) {
+    #hero-container {
+        font-size: 1.8rem;
+    }
+}
+
+/* MAIN */
 
 .dogs-grid {
     width: 90%;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
-.cats-grid, .dogs-grid {
+.dogs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
 }
 
-.cat-card, .dog-card {
+.dog-card {
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
@@ -100,7 +105,7 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-.cat-img, .dog-img {
+.dog-img {
     width: 100%;
     height: auto;
     max-height: 220px;            
@@ -109,17 +114,16 @@ a {
     display: block;
 }
 
-.cat-info, .dog-info {
+.dog-info {
     padding: 15px;
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
 }
 
-.cat-desc, .dog-desc {
+.dog-desc {
     flex-grow: 1; 
 }
-
 
 .btn-card {
     background-color: transparent;
@@ -148,7 +152,7 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    margin: 0 auto;
+    margin: 15px auto;
     margin-bottom: 25px;
 }
 
@@ -184,64 +188,6 @@ a {
 .btn-filter:hover {
     background-color: #a04020;
     color: white;
-}
-
-/* Page Fiche de l'animal */
-.back-container {
-    max-width: 1100px;
-    margin: 30px auto 10px auto;
-}
-
-.btn-back {
-    text-decoration: none;
-    color: #2D4A3E;
-    font-weight: bold;
-    font-size: 0.95rem;
-}
-
-.pet-profile-container {
-    max-width: 1100px;
-    margin: 0 auto 50px auto;
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-}
-
-.pet-profile-image {
-    flex: 1;
-}
-
-.pet-profile-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.pet-profile-info {
-    flex: 1;
-}
-
-.pet-profile-info h2 {
-    font-size: 2rem;
-    color: #2D4A3E;
-    margin-bottom: 5px;
-}
-
-.pet-subtitle {
-    color: #666666;
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.divider {
-    border: 0;
-    border-top: 1px solid #eeeeee;
-    margin: 20px 0;
 }
 
 /* Grille d'informations en cadre */
@@ -365,9 +311,9 @@ a {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.94);
     backdrop-filter: blur(4px);
-    padding: 25px;
-    box-sizing: border-box;
+    padding: 15px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
     opacity: 0;
@@ -432,4 +378,24 @@ label.btn-card {
     display: inline-block;
     text-align: center;
     cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #12350F;
+    height: 80px;
+    align-content: center;
+}
+
+#footer-container {
+    width: 90%;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+@media (max-width: 700px) {
+    #footer-container {
+        text-align: center;
+    }
 }
