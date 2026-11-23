@@ -110,7 +110,7 @@ input {
     display: none;
 }
 
-label .story {
+label {
     display: block;
     text-align: center;
     border: 2px solid #A84E32;
@@ -125,9 +125,7 @@ label .story {
     cursor: pointer;
 }
 
-/* OSIRIS */
-
-#story-card-osiris {
+.story-card {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -149,13 +147,13 @@ label .story {
         transform 1s ease;
 }
 
-.card:has(#story-toggle-osiris:checked) #story-card-osiris {
+.card:has(.fiche-toggle:checked) .story-card {
     visibility: visible;
     opacity: 1;
     transform: translate(0);
 }
 
-.card:has(#story-toggle-osiris:checked) .infos.osiris {
+.card:has(.fiche-toggle:checked) .infos {
     opacity: 0.3;
 }
 
