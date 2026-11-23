@@ -133,6 +133,7 @@ label {
     height: 100%;
     text-align: justify;
     position: absolute;
+    box-sizing: border-box;
     z-index: 10;
     background-color: rgba(250, 247, 242, 0.85);
     color: black;
@@ -142,9 +143,13 @@ label {
     visibility: hidden;
     opacity: 0;
     transition:
-        visibility 1s ease,
-        opacity 1s ease,
-        transform 1s ease;
+        visibility 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.story-card p {
+    flex: 1;
 }
 
 .card:has(.fiche-toggle:checked) .story-card {
@@ -154,108 +159,6 @@ label {
 }
 
 .card:has(.fiche-toggle:checked) .infos {
-    opacity: 0.3;
-}
-
-/* MIMOSA */
-
-#story-card-mimosa {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    height: 100%;
-    padding: 5px;
-    text-align: justify;
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(250, 247, 242, 0.85);
-    color: black;
-    border-radius: 15px;
-
-    transform: translate(-15px);
-    visibility: hidden;
-    opacity: 0;
-    transition:
-        visibility 1s ease,
-        opacity 1s ease,
-        transform 1s ease;
-}
-
-.card:has(#story-toggle-mimosa:checked) #story-card-mimosa {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(0);
-}
-
-.card:has(#story-toggle-mimosa:checked) .infos.mimosa {
-    opacity: 0.3;
-}
-
-/* VALENTIN */
-
-#story-card-valentin {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    height: 100%;
-    padding: 5px;
-    text-align: justify;
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(250, 247, 242, 0.85);
-    color: black;
-    border-radius: 15px;
-
-    transform: translate(-15px);
-    visibility: hidden;
-    opacity: 0;
-    transition:
-        visibility 1s ease,
-        opacity 1s ease,
-        transform 1s ease;
-}
-
-.card:has(#story-toggle-valentin:checked) #story-card-valentin {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(0);
-}
-
-.card:has(#story-toggle-valentin:checked) .infos.valentin {
-    opacity: 0.3;
-}
-
-/* BOBO */
-
-#story-card-bobo {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    height: 100%;
-    padding: 5px;
-    text-align: justify;
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(250, 247, 242, 0.85);
-    color: black;
-    border-radius: 15px;
-
-    transform: translate(-15px);
-    visibility: hidden;
-    opacity: 0;
-    transition:
-        visibility 1s ease,
-        opacity 1s ease,
-        transform 1s ease;
-}
-
-.card:has(#story-toggle-bobo:checked) #story-card-bobo {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(0);
-}
-
-.card:has(#story-toggle-bobo:checked) .infos.bobo {
     opacity: 0.3;
 }
 
@@ -284,6 +187,10 @@ label {
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.return-btn {
+    border: none;
 }
 
 @media (max-width: 700px) {
