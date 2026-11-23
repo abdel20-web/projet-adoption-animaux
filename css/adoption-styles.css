@@ -353,12 +353,10 @@ a {
     overflow: hidden;
 }
 
-/* Cache la case à cocher */
 .fiche-toggle {
     display: none;
 }
 
-/* Panneau d'informations caché par défaut */
 .fiche-overlay {
     position: absolute;
     top: 0;
@@ -379,7 +377,6 @@ a {
     z-index: 10;
 }
 
-/* Affichage au clic sur le bouton */
 .fiche-toggle:checked ~ .fiche-overlay {
     opacity: 1;
     visibility: visible;
