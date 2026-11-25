@@ -66,48 +66,75 @@
             <div id="chiens-titre">
                 <h2>Nos chiens à l'adoption</h2>
                 <div>
-                    <a id="liste-chiens">Voir tous les chiens &rarr;</a>
+                    <a href="adoption.html" id="liste-chiens">Voir tous les chiens &rarr;</a>
                 </div>
             </div>
             <div id="cards">
 
                 <article class="card">
-                    <img src="img/Portrait d’un border collie joyeux.png" alt="Milo" id="Milo">
                     <div class="infos">
-                        <div id="caract">
-                            <h3>Milo</h3>
-                            <p>Acompte: 50€</p>
+                        <img src="img/Portrait d’un border collie joyeux.png" alt="Milo" id="Milo">
+                        <div class="infos-desc">
+                            <div id="caract">
+                                <h3>Milo</h3>
+                                <p>Acompte: 50€</p>
+                            </div>
+                            <p>2 ans</p>
+                            <p id="description">Energique et affectueux, Milo rêve d'une famille active.</p>
                         </div>
-                        <p>2 ans</p>
-                        <p id="description">Energique et affectueux, Milo rêve d'une famille active.</p>
+                        <input type="checkbox" id="story-toggle-milo" class="fiche-toggle">
+                        <label for="story-toggle-milo">Voir le profil</label>
                     </div>
-                    <a>Voir le profil</a>
+                    <div class="story-card">
+                        <h2>Milo</h2>
+                        <h3 class="situation">Adopté via Veeweyde</h3>
+                        <p>Milo est un chien propre, capable de rester seul sans difficulté et qui peut tout à fait vivre en appartement, même si un jardin sécurisé serait un véritable atout pour son bien-être. De nature méfiante avec les inconnus, Milo a besoin de temps pour accorder sa confiance.</p>
+                        <label for="story-toggle-milo" class="back-arrow">&larr; Retour</label>
+                    </div>
                 </article>
 
                 <article class="card">
-                    <img src="img/Portrait rapproché d’un beagle au jardin verdoyant.png" alt="Luna" id="Luna">
                     <div class="infos">
-                        <div id="caract">
-                            <h3>Luna</h3>
-                            <p>Acompte: 150€</p>
+                        <img src="img/Portrait rapproché d’un beagle au jardin verdoyant.png" alt="Luna" id="Luna">
+                        <div class="infos-desc">
+                            <div id="caract">
+                                <h3>Luna</h3>
+                                <p>Acompte: 150€</p>
+                            </div>
+                            <p>3 ans</p>
+                            <p id="description">Douce et sociable, Luna s'entend très bien avec les autres chiens.</p>
                         </div>
-                        <p>3 ans</p>
-                        <p id="description">Douce et sociable, Luna s'entend très bien avec les autres chiens.</p>
+                        <input type="checkbox" id="story-toggle-luna" class="fiche-toggle">
+                        <label for="story-toggle-luna">Voir le profil</label>
                     </div>
-                    <a>Voir le profil</a>
+                    <div class="story-card">
+                        <h2>Luna</h2>
+                        <h3 class="situation">Adopté via Help Animals</h3>
+                        <p>Luna est une véritable pile électrique, débordante d'affection. Elle adore les humains, réclame des câlins, aime jouer et se montre toujours en demande d'attention. Un jardin est indispensable : Luna a besoin de se dépenser physiquement. Luna supporte très mal la solitude.</p>
+                        <label for="story-toggle-luna" class="back-arrow">&larr; Retour</label>
+                    </div>
                 </article>
 
                 <article class="card">
-                    <img src="img/oscar-chien.png" alt="Oscar" id="Oscar">
                     <div class="infos">
-                        <div id="caract">
-                            <h3>Oscar</h3>
-                            <p>Acompte: 100€</p>
+                        <img src="img/oscar-chien.png" alt="pilou" id="pilou">
+                        <div class="infos-desc">
+                            <div id="caract">
+                                <h3>Pilou</h3>
+                                <p>Acompte: 100€</p>
+                            </div>
+                            <p>5 ans</p>
+                            <p id="description">Calme et câlin, Pilou est un compagnon idéal au quotidien.</p>
                         </div>
-                        <p>5 ans</p>
-                        <p id="description">Calme et câlin, Oscar est un compagnon idéal au quotidien.</p>
+                        <input type="checkbox" id="story-toggle-pilou" class="fiche-toggle">
+                        <label for="story-toggle-pilou">Voir le profil</label>
                     </div>
-                    <a>Voir le profil</a>
+                    <div class="story-card">
+                        <h2>Pilou</h2>
+                        <h3 class="situation">Adopté via Sans Collier</h3>
+                        <p>Pilou est un chien incroyablement gentil et proche de l’humain. En promenade, il a beaucoup d’énergie et peut tirer fortement en laisse. Il peut également se montrer réactif lors de croisements. Pilou recherche aujourd’hui une famille douce, patiente et bienveillante.</p>
+                        <label for="story-toggle-pilou" class="back-arrow">&larr; Retour</label>
+                    </div>
                 </article>
 
                 <article id="success-stories">
@@ -126,9 +153,9 @@
                 <h2 class="footer-titles">Les associations partenaires</h2>
                 <p>Retrouver les organisations qui nous font confiance et découvrez leurs actions.</p>
                 <div id="logos-parnetaires">
-                    <img src="img/Logo circulaire d’animaux solidaires.png" alt="Logo Helpanimals" class="logo-partenaires">
-                    <img src="img/Logo Veeweyde.png" alt="Logo Veeweyde" class="logo-partenaires">
-                    <img src="img/Logo Sans Collier.png" alt="Logo Sans Collier" class="logo-partenaires">
+                    <a href="https://www.helpanimals.be"><img src="img/Logo circulaire d’animaux solidaires.png" alt="Logo Helpanimals" class="logo-partenaires"></a>
+                    <a href="https://www.veeweyde.be"><img src="img/Logo Veeweyde.png" alt="Logo Veeweyde" class="logo-partenaires"></a>
+                    <a href="https://www.sanscollier.be"><img src="img/Logo Sans Collier.png" alt="Logo Sans Collier" class="logo-partenaires"></a>
                 </div>
                 <a id="voir-sources" href="sources.html">Voir toutes les sources &rarr;</a>
             </div>
