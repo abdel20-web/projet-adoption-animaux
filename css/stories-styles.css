@@ -110,12 +110,17 @@ input {
     display: none;
 }
 
-label {
+.card label:not(.return-btn) {
     display: block;
     text-align: center;
     border: 2px solid #A84E32;
     color: #A84E32;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.return-btn {
+    color: #A84E32;
     cursor: pointer;
 }
 
@@ -131,9 +136,9 @@ label {
     gap: 15px;
     padding: 5px;
     height: 100%;
-    text-align: justify;
+    text-align: center;
+    justify-content: center;
     position: absolute;
-    box-sizing: border-box;
     z-index: 10;
     background-color: rgba(250, 247, 242, 0.85);
     color: black;
@@ -142,13 +147,11 @@ label {
     transform: translate(-15px);
     visibility: hidden;
     opacity: 0;
-    transition:
-        visibility 0.3s ease,
-        opacity 0.3s ease,
-        transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.story-card p {
+.story-card.histoire {
+    display: flex;
     flex: 1;
 }
 
@@ -171,8 +174,11 @@ label {
 }
 
 .infos {
-    display: grid;
-    grid-template-rows: auto auto 1fr;
+/*    display: grid;
+    grid-template-rows: auto auto 1fr;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 15px;
     padding: 15px;
 }
@@ -194,7 +200,7 @@ label {
 }
 
 @media (max-width: 700px) {
-        #nav-largeScreen,
+    #nav-largeScreen,
     #menu-toggle,
     .menu
     {

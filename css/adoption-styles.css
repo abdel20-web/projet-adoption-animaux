@@ -88,9 +88,6 @@ a {
 .dogs-grid {
     width: 90%;
     margin: 15px auto;
-}
-
-.dogs-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
@@ -111,18 +108,17 @@ a {
     max-height: 220px;            
     object-fit: cover;            
     object-position: left center; 
-    display: block;
 }
 
 .dog-info {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; 
+    flex: 1;
 }
 
 .dog-desc {
-    flex-grow: 1; 
+    flex: 1;
 }
 
 .btn-card {
@@ -362,7 +358,7 @@ a {
 }
 
 .fiche-subtitle {
-    color: #8C6239;
+    color: #A84E32;
     font-weight: bold;
     font-size: 0.9rem;
     margin: 5px 0 10px 0;
@@ -380,23 +376,19 @@ a {
     margin: 10px 0;
     font-size: 0.85rem;
     color: #444;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .btn-retour {
     display: inline-block;
-    color: #666;
+    color: #A84E32;
     font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
     margin-top: auto;
     transition: color 0.2s ease;
-}
-
-.btn-retour:hover {
-    color: #2D4A3E;
 }
 
 /* Pour que le <label> garde le curseur main et le bon affichage */

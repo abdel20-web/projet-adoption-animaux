@@ -126,6 +126,7 @@ main {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 30px;
+    min-height: 300px;
 }
 
 #chiens-titre {
@@ -139,34 +140,50 @@ main {
     color: #A84E32;
 }
 
+.card {
+    display: grid;
+}
+
 #cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
 }
 
-.card {
+.infos {
     border-radius: 10px;
-    border: 1px solid lightgray;
+    grid-area: 1/1;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    transition: all 0.7s ease;
 }
 
-.card img {
+.infos img {
     object-fit: cover;
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.infos {
-    padding-left: 15px;
-    padding-right: 15px;
+.infos-desc {
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 14px;
     flex: 1;
+    font-size: 1.05rem;
+}
+
+.infos:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.situation {
+    color: #A84E32;
 }
 
 #caract {
@@ -175,24 +192,62 @@ main {
     align-items: center;
 }
 
-.card a {
-    text-align: center;
-    border: 2px solid #A84E32;
-    color: #A84E32;
-    border-radius: 15px;
-    width: 60%;
-    margin: 0 auto;
-    cursor: pointer;
-    margin-bottom: 15px;
+#description {
+    flex: 1;
 }
 
-.card a:hover {
+.card label:not(.back-arrow) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #A84E32;
+    height: 25px;
+    color: #A84E32;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+.card label:not(.back-arrow):hover {
     background-color: #A84E32;
     color: white;
 }
 
-#description {
-    flex: 1;
+.fiche-toggle {
+    display: none;
+}
+
+.back-arrow {
+    text-align: center;
+    color: #A84E32;
+    cursor: pointer;
+    border: none;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-area: 1/1;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(250, 247, 242, 0.85);
+    color: black;
+    border-radius: 10px;
+    transform: rotateY(90deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.infos:has(.fiche-toggle:checked) ~ .story-card {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+.infos:has(.fiche-toggle:checked) {
+    opacity: 0.6;
 }
 
 #success-stories {
@@ -209,6 +264,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#success-stories:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 #success-stories-container {
@@ -228,14 +288,29 @@ main {
 }
 
 #success-stories a {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
     border: 2px solid #A84E32;
     color: #A84E32;
     border-radius: 15px;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     background-color: #FAF7F2;
     padding: 2px;
+}
+
+@media (min-width: 1000px) {
+    .story-card {
+        justify-content: center;
+    }
+    .card label:not(.back-arrow),
+    #success-stories a {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -348,6 +423,10 @@ main {
     #decouverte {
         width: 60%;
     }
+    .card label {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 #partenariats-volontariats {
@@ -362,7 +441,8 @@ main {
 #partenaires {
     align-content: center;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
     gap: 20px;
     text-align: center;
     padding: 20px;
@@ -371,7 +451,8 @@ main {
 #volontariats {
     align-content: center;
     display: grid;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
     gap: 20px;
     text-align: center;
     padding: 20px;
@@ -388,6 +469,7 @@ main {
 .logo-partenaires {
     width: 72px;
     height: auto;
+    cursor: pointer;
 }
 
 #voir-sources {
@@ -401,6 +483,12 @@ main {
     border-radius: 15px;
     padding: 5px;
     width: fit-content;
+}
+
+.decouverte.volontariats:hover {
+    border: 2px solid #A84E32;
+    color: #A84E32;
+    background-color: transparent;
 }
 
 @media (max-width: 700px) {
