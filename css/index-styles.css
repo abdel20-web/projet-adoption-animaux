@@ -179,7 +179,7 @@ main {
 
 .infos:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 .situation {
@@ -268,7 +268,7 @@ main {
 
 #success-stories:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 #success-stories-container {

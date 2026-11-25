@@ -105,9 +105,8 @@ a {
 .dog-img {
     width: 100%;
     height: auto;
-    max-height: 220px;            
     object-fit: cover;            
-    object-position: left center; 
+    object-position: center; 
 }
 
 .dog-info {

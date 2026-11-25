@@ -124,12 +124,6 @@ input {
     cursor: pointer;
 }
 
-.back-arrow {
-    text-align: left;
-    color: #A84E32;
-    cursor: pointer;
-}
-
 .story-card {
     display: flex;
     flex-direction: column;
@@ -150,11 +144,6 @@ input {
     transition: all 0.3s ease;
 }
 
-.story-card.histoire {
-    display: flex;
-    flex: 1;
-}
-
 .card:has(.fiche-toggle:checked) .story-card {
     visibility: visible;
     opacity: 1;
@@ -170,17 +159,18 @@ input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-radius: 15px;
-    position: relative;
+    position: relative; 
 }
 
 .infos {
-/*    display: grid;
-    grid-template-rows: auto auto 1fr;*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 15px;
     padding: 15px;
+}
+
+.infos .desc {
+    flex: 1;
 }
 
 .situation {
@@ -192,6 +182,7 @@ input {
     object-position: center;
     width: 100%;
     height: 100%;
+    
     border-radius: 15px;
 }
 
@@ -199,7 +190,28 @@ input {
     border: none;
 }
 
+@media (min-width: 1000px) {
+    .card label:not(.return-btn) {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .card img {
+        height: 300px;
+        object-position: center 10%;
+    }
+    .infos .desc {
+        flex: initial;
+    }
+    .infos {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 700px) {
+    .card img {
+        height: 300px;
+        object-position: center 15%;
+    }
     #nav-largeScreen,
     #menu-toggle,
     .menu
