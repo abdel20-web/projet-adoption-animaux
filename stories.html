@@ -43,75 +43,102 @@
             </div>
         </section>
 
-        <section id="stories-grid">
+        <section id="slider">
 
-            <div class="card">
-                <img src="img/Câlin chaleureux avec un golden retriever.png" alt="Photo de Osiris" class="dog-img">
-                <div class="infos">
-                    <h2>Osiris</h2>
-                    <h3 class="situation">Adopté via Animaniacs</h3>
-                    <p class="desc">Etant donné son histoire douloureuse, il est vrai que nous avons été encore plus patients et doux avec Osiris qu’avec les autres membres de la mini-meute...</p>
-                    <input type="checkbox" id="story-toggle-osiris" class="fiche-toggle">
-                    <label for="story-toggle-osiris">Lire l'histoire</label>
-                </div>
-                <div class="story-card">
-                    <h2>Osiris</h2>
-                    <h3 class="situation">Adopté via Animaniacs</h3>
-                    <p class="histoire">Etant donné son histoire douloureuse, il est vrai que nous avons été encore plus patients et doux avec Skippy qu’avec les autres membres de la mini-meute. Il vivait dans la pièce de vie avec nous mais évitait tout contact trop proche. Petit à petit la confiance est venue et vient encore progressivement. Il nous présente maintenant son ventre pour de longues séances de câlins, vient de temps en temps dans notre lit dormir en posant sa tête sur ma main (quel plaisir). Avec les chiens et le chat, tout s’est très vite fait.</p>
-                    <label for="story-toggle-osiris" class="return-btn">&larr; Retour</label>
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+
+            <div class="carousel">
+                <div class="cards">
+
+                    <div class="card">
+                        <img src="img/Câlin chaleureux avec un golden retriever.png" alt="Photo de Osiris" class="dog-img">
+                        <div class="infos">
+                            <h2>Osiris</h2>
+                            <h3 class="situation">Adopté via Animaniacs</h3>
+                            <p class="desc">Etant donné son histoire douloureuse, il est vrai que nous avons été encore plus patients et doux avec Osiris qu’avec les autres membres de la mini-meute...</p>
+                            <input type="checkbox" id="story-toggle-osiris" class="fiche-toggle">
+                            <label for="story-toggle-osiris">Lire l'histoire</label>
+                        </div>
+                        <div class="story-card">
+                            <h2>Osiris</h2>
+                            <h3 class="situation">Adopté via Animaniacs</h3>
+                            <p class="histoire">Etant donné son histoire douloureuse, il est vrai que nous avons été encore plus patients et doux avec Skippy qu’avec les autres membres de la mini-meute. Il vivait dans la pièce de vie avec nous mais évitait tout contact trop proche. Petit à petit la confiance est venue et vient encore progressivement. Il nous présente maintenant son ventre pour de longues séances de câlins, vient de temps en temps dans notre lit dormir en posant sa tête sur ma main (quel plaisir). Avec les chiens et le chat, tout s’est très vite fait.</p>
+                            <label for="story-toggle-osiris" class="return-btn">&larr; Retour</label>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/Tendresse partagée avec un chat tigré.png" alt="Photo de Milo" class="dog-img">
+                        <div class="infos mimosa">
+                            <h2>Mimosa</h2>
+                            <h3 class="situation">Adoptée via Animaniacs</h3>
+                            <p class="desc">Bonjour, Je vous envoie des nouvelles de Minouchka. Nous avons adopté Mimosa (nous l’avons rebaptisée) en mars, et depuis elle a bien pris ces marques!</p>
+                            <input type="checkbox" id="story-toggle-mimosa" class="fiche-toggle">
+                            <label for="story-toggle-mimosa">Lire l'histoire</label>
+                        </div>
+                        <div class="story-card">
+                            <h2>Mimosa</h2>
+                            <h3 class="situation">Adoptée via Animaniacs</h3>
+                            <p>D’ici 3 jours, cela fera déjà un mois que la petite Mimosa (anciennement Lili) nous a rejoints. Très propre, très sage et surtout très gâtée, elle nous rend très heureux et on le lui rend bien ! La première semaine a été un peu difficile pour elle, ce qui est logique avec tous ces changements, mais maintenant elle dort avec nous, demande des caresses, joue avec ses nombreux jouets… Elle s’est parfaitement adaptée et ça se ressent. Elle ne peut déjà plus se passerde nous : impossible de changer de pièce sans qu’elle nous suive. Au final, cette adoption, ce n’est que de l’amour et de la joie !"</p>
+                            <label for="story-toggle-mimosa" class="return-btn">&larr; Retour</label>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/Tendresse au coin du feu.png" alt="Photo de Valentin" class="dog-img">
+                        <div class="infos valentin">
+                            <h2>Valentin</h2>
+                            <h3 class="situation">Adopté via Veeweyde</h3>
+                            <p class="desc">Il a bien grandi mon Valentin. Qu’est-ce que j’laime, malgré les poils à ramasser! Un Amour de chat!</p>
+                            <input type="checkbox" id="story-toggle-valentin" class="fiche-toggle">
+                            <label for="story-toggle-valentin">Lire l'histoire</label>
+                        </div>
+                        <div class="story-card">
+                            <h2>Valentin</h2>
+                            <h3 class="situation">Adopté via Veeweyde</h3>
+                            <p>Il a bien grandi mon Valentin. Qu’est-ce que j’laime, malgré les poils à ramasser! Un Amour de chat! Affectueux avec ses moments d’indépendance. Son caractère me convient pile poils! Sur la photo on dirait qu’il rit aux éclats! Il baille à s’en décrocher la mâchoire! Me fait rire aussi avec ses « multiples » intonations de miaulements selon ce qu’il veut! Y’a intérêt à comprendre vite! Bref, j’espère le rendre heureux!</p>
+                            <label for="story-toggle-valentin" class="return-btn">&larr; Retour</label>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/Tendresse chaleureuse avec un bouledogue français.png" alt="Photo de Bobo" class="dog-img">
+                        <div class="infos bobo">
+                            <h2>Bobo</h2>
+                            <h3 class="situation">Adopté via Veeweyde</h3>
+                            <p class="desc">Quand notre vieux bouledogue français issu lui aussi d’un refuge nous a quittés, il a laissé un grand vide dans nos cœurs. Une fois prêts à accueillir un nouveau compagnon, c’était une évidence, on a décidé d’aller faire un tour au refuge Veeweyde.</p>
+                            <input type="checkbox" id="story-toggle-bobo" class="fiche-toggle">
+                            <label for="story-toggle-bobo">Lire l'histoire</label>
+                        </div>
+                        <div class="story-card">
+                            <h2>Bobo</h2>
+                            <h3 class="situation">Adopté via Veeweyde</h3>
+                            <p>Quand notre vieux bouledogue français issu lui aussi d’un refuge nous a quittés, il a laissé un grand vide dans nos cœurs. Une fois prêts à accueillir un nouveau compagnon, c’était une évidence, on a décidé d’aller faire un tour au refuge Veeweyde. On n’avait pas d’idée précise en tête, ni pour la race ni pour le look du chien. Ce qui comptait vraiment, c’était le feeling : on voulait un chien avec qui ça collait, pas trop craintif, et qui aimait les gens. On était aussi très ouverts à l’idée d’adopter un chien plus âgé. Alors, pourquoi ne pas donner une chance à un papy qui mérite tout autant d’amour ?</p>
+                            <label for="story-toggle-bobo" class="return-btn">&larr; Retour</label>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="card">
-                <img src="img/Tendresse partagée avec un chat tigré.png" alt="Photo de Milo" class="dog-img">
-                <div class="infos mimosa">
-                    <h2>Mimosa</h2>
-                    <h3 class="situation">Adoptée via Animaniacs</h3>
-                    <p class="desc">Bonjour, Je vous envoie des nouvelles de Minouchka. Nous avons adopté Mimosa (nous l’avons rebaptisée) en mars, et depuis elle a bien pris ces marques!</p>
-                    <input type="checkbox" id="story-toggle-mimosa" class="fiche-toggle">
-                    <label for="story-toggle-mimosa">Lire l'histoire</label>
-                </div>
-                <div class="story-card">
-                    <h2>Mimosa</h2>
-                    <h3 class="situation">Adoptée via Animaniacs</h3>
-                    <p>D’ici 3 jours, cela fera déjà un mois que la petite Mimosa (anciennement Lili) nous a rejoints. Très propre, très sage et surtout très gâtée, elle nous rend très heureux et on le lui rend bien ! La première semaine a été un peu difficile pour elle, ce qui est logique avec tous ces changements, mais maintenant elle dort avec nous, demande des caresses, joue avec ses nombreux jouets… Elle s’est parfaitement adaptée et ça se ressent. Elle ne peut déjà plus se passerde nous : impossible de changer de pièce sans qu’elle nous suive. Au final, cette adoption, ce n’est que de l’amour et de la joie !"</p>
-                    <label for="story-toggle-mimosa" class="return-btn">&larr; Retour</label>
-                </div>
+            <div class="navigation nav1">
+                <label for="slide2" class="next">></label>
             </div>
-
-            <div class="card">
-                <img src="img/Tendresse au coin du feu.png" alt="Photo de Valentin" class="dog-img">
-                <div class="infos valentin">
-                    <h2>Valentin</h2>
-                    <h3 class="situation">Adopté via Veeweyde</h3>
-                    <p class="desc">Il a bien grandi mon Valentin. Qu’est-ce que j’laime, malgré les poils à ramasser! Un Amour de chat!</p>
-                    <input type="checkbox" id="story-toggle-valentin" class="fiche-toggle">
-                    <label for="story-toggle-valentin">Lire l'histoire</label>
-                </div>
-                <div class="story-card">
-                    <h2>Valentin</h2>
-                    <h3 class="situation">Adopté via Veeweyde</h3>
-                    <p>Il a bien grandi mon Valentin. Qu’est-ce que j’laime, malgré les poils à ramasser! Un Amour de chat! Affectueux avec ses moments d’indépendance. Son caractère me convient pile poils! Sur la photo on dirait qu’il rit aux éclats! Il baille à s’en décrocher la mâchoire! Me fait rire aussi avec ses « multiples » intonations de miaulements selon ce qu’il veut! Y’a intérêt à comprendre vite! Bref, j’espère le rendre heureux!</p>
-                    <label for="story-toggle-valentin" class="return-btn">&larr; Retour</label>
-                </div>
+            <div class="navigation nav2">
+                <label for="slide1" class="prev"><</label>
+                <label for="slide3" class="next">></label>
             </div>
-
-            <div class="card">
-                <img src="img/Tendresse chaleureuse avec un bouledogue français.png" alt="Photo de Bobo" class="dog-img">
-                <div class="infos bobo">
-                    <h2>Bobo</h2>
-                    <h3 class="situation">Adopté via Veeweyde</h3>
-                    <p class="desc">Quand notre vieux bouledogue français issu lui aussi d’un refuge nous a quittés, il a laissé un grand vide dans nos cœurs. Une fois prêts à accueillir un nouveau compagnon, c’était une évidence, on a décidé d’aller faire un tour au refuge Veeweyde.</p>
-                    <input type="checkbox" id="story-toggle-bobo" class="fiche-toggle">
-                    <label for="story-toggle-bobo">Lire l'histoire</label>
-                </div>
-                <div class="story-card">
-                    <h2>Bobo</h2>
-                    <h3 class="situation">Adopté via Veeweyde</h3>
-                    <p>Quand notre vieux bouledogue français issu lui aussi d’un refuge nous a quittés, il a laissé un grand vide dans nos cœurs. Une fois prêts à accueillir un nouveau compagnon, c’était une évidence, on a décidé d’aller faire un tour au refuge Veeweyde. On n’avait pas d’idée précise en tête, ni pour la race ni pour le look du chien. Ce qui comptait vraiment, c’était le feeling : on voulait un chien avec qui ça collait, pas trop craintif, et qui aimait les gens. On était aussi très ouverts à l’idée d’adopter un chien plus âgé. Alors, pourquoi ne pas donner une chance à un papy qui mérite tout autant d’amour ?</p>
-                    <label for="story-toggle-bobo" class="return-btn">&larr; Retour</label>
-                </div>
+            <div class="navigation nav3">
+                <label for="slide2" class="prev"><</label>
+                <label for="slide4" class="next">></label>
             </div>
+            <div class="navigation nav4">
+                <label for="slide3" class="prev"><</label>
+            </div>
+            
         </section>
 
     </main>
