@@ -261,7 +261,7 @@ label {
 
 .card img {
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 50%;
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -277,8 +277,8 @@ label {
         margin: 0 auto;
     }
     .card img {
-        height: 300px;
-        object-position: center 10%;
+        height: 500px;
+        object-position: center 15%;
     }
     .infos .desc {
         flex: initial;
@@ -290,7 +290,7 @@ label {
 
 @media (max-width: 700px) {
     #slider {
-        width: 90%;
+        width: 85%;
     }
     .card img {
         height: 100%;
